@@ -13,6 +13,10 @@ into a dropbox folder containing approximately a total of 600 training images fo
 Then, a convolutional neural network was built using Python3 and tensorflow using Google Colab. The ipynb notebook can also be
 found in this repository.
 
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/49466466/61164493-a2defc00-a550-11e9-9912-24eef1c71e2c.jpg">
+<p>
+
 ## Introduction
 Camera-traps are stationary, motion-triggered cameras that are secured to trees in the field in order to observe the animal population and biodiversity in the selected area. As the animals pass through the desired area, camera traps are motion triggered to capture short sequences of images. These camera traps are becoming increasingly popular, as they are a cost-effective, non-invasive way of capturing biodiversity data. These image sets typically range in the order of tens of thousands, an dthe task of manually processing these images is extremely time consuming. 
 
