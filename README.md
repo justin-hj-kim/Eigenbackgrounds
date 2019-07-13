@@ -1,6 +1,8 @@
 # Eigenbackgrounds and Logical Combination for Foreground Detection
 
+<p align="center">
 ![picture alt](https://specials-images.forbesimg.com/imageserve/559ebf67e4b05c2c3431c7a4/300x300.jpg?fit=scale&background=000000)
+</p>
 
 ## Repository Overview 
 This repository contains the work done over ENGR484 Senior Capstone Design Project. 
