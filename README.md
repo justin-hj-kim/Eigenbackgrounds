@@ -24,6 +24,7 @@ Camera-traps are stationary, motion-triggered cameras that are secured to trees 
 The Eigenbackground method uses the eigenvectors of the image data set to perform singular value decomposition and principal component analysis to construct a robust probability density function of the static portions of background. The Eigenbackground is not strictly pixel related, as it takes into account the corresponding pixel values in the form of eigenvectors, and is relatively computationally light. The foreground masks of resulting from the Eigenbackground images will then be further filtered using a logical combination with its two most adjacent masks, further reducing the false positive rate of the detection system. 
 
 ## Quick Results
+* Main Assumption of thie method is that the foreground animal(s) move significantly enough in terms of pixel distances that they do not get filtered out by the logical masks.
 * The proposed Eigenbackground-Combination method has a 90+% detection accuracy rate. 
 * The Convolutional Neural Network will vary it its capacity given different values for the number of neurons, number of hidden layers, etc.
 
