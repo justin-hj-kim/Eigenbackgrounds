@@ -27,7 +27,7 @@ The Eigenbackground method uses the eigenvectors of the image data set to perfor
 
 - Reshape each image into a column vector of shape wh x 1, and append each image in sequence such that a sequence of images is of shape wh x N, where N is the number of image frames in the sequence
 - Subtract the mean image (column vector) from each image in the sequence above, creating a normalized image vector X
-- Apply singular value decomposition to X such that X = USV^t, where U is an orthogonal left diagonal matrix containing the eigenvectors of the covariance matrix of XX^t
+- Apply singular value decomposition to X such that X = USV^t, where U is an orthogonal matrix containing the left eigenvectors of the covariance matrix of XX^t
 - Take the first R ranks of U (now calling it U_r), such that it contains the majority of the covariance explained by the eigenvectors
 - The princial component p is calculated by taking the transpose of U_r and multiplying it to (y-m) where y is the current image and m is the mean image.
 - Find the projected image of each image now by multiplying U_r by p, and adding m.
