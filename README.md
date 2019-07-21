@@ -52,6 +52,7 @@ An example of the final layer of convolutional filters result in the following e
 <img src = "https://user-images.githubusercontent.com/49466466/61576476-79f0d500-ab15-11e9-90c3-ae9a935a94ce.png">
 </p>
 
+We can observe that the four images above have been "convolved" and max-pooled such that they are much smaller in pixel size (the original image was 300 x 300 pixels!). Although they have fewer pixels, they contain the more "relevant" and important higher level features about the foreground animals of interest.
 
 ## Quick Results
 * Main Assumption of thie method is that the foreground animal(s) move significantly enough in terms of pixel distances that they do not get filtered out by the logical masks.
