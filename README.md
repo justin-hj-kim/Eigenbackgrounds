@@ -10,7 +10,7 @@ First, the Matlab file contains the combination eigenbackground method discussed
 This method was employed on a database from Trinity College's \\tbos\Projects\Smedley ecology dataset gathered in 2015.
 The resulting foreground masks created by employing the combination eigenbackground method on various datasets were compiled
 into a dropbox folder containing approximately a total of 600 training images for two classes: humans and animals.
-Then, a convolutional neural network was built using Python3 and tensorflow using Google Colab. The ipynb notebook can also be
+Then, [a convolutional neural network was built using Python3 and tensorflow using Google Colab](https://colab.research.google.com/drive/13pHC50V5ietsx0x2DosXU-xHjHvAkKtR). The ipynb notebook can also be
 found in this repository.
 
 <p align = "center">
