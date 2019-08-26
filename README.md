@@ -56,7 +56,7 @@ An example of the final layer of convolutional filters result in the following e
 We can observe that the four images above have been "convolved" and max-pooled such that they are much smaller in pixel size (the original image was 300 x 300 pixels!). Although they have fewer pixels, they contain the more "relevant" and important higher level features about the foreground animals of interest.
 
 ## Quick Results
-* First, examine the singular values contained within the S matrix of the SVD. If singular values of S are rapidly decreasing, then you can expect that the first R ranks of U will contain the relevant information regarding the static portions of the column vector images.
+* First, examine the singular values contained within the S matrix of the SVD. If singular values of S are rapidly decreasing, then you can expect that the first R ranks of U will contain the relevant information regarding the static portions of the column vector images - plotting the diagonal values of S will give you an idea of how much of the covariance (hopefully the static portions of the image) is explained by the R ranks. 
 * Main Assumption of thie method is that the foreground animal(s) move significantly enough in terms of pixel distances that they do not get filtered out by the logical masks.
 * The proposed Eigenbackground-Combination method has a 90+% detection accuracy rate. 
 * The Convolutional Neural Network will vary it its capacity given different values for the number of neurons, number of hidden layers, etc.
