@@ -30,8 +30,9 @@ The Eigenbackground method uses the eigenvectors of the image data set to perfor
 - Apply singular value decomposition to X such that X = USV<sup>T</sup>, where U is an orthogonal matrix containing the left eigenvectors of the covariance matrix of XX<sup>T</sup>
 - Take the first R ranks of U (now calling it U<sub>r</sub>), such that it contains the majority of the covariance explained by the eigenvectors
 - The princial component p is calculated by taking the transpose of U<sub>r</sub> and multiplying it to (y-m) where y is the current image and m is the mean image.
-- Find the projected image of each image now by multiplying U<sub>r</sub> by p, and adding m.
-- Take each image subtracted by its own subtracted image, then threshold the absolute value of the difference.
+- Find the projected image of each image now by multiplying U<sub>r</sub> by p, and adding m to each input image in the sequence.
+- Take each image subtracted by its corresponding projected image, then threshold the absolute value of the difference. 
+- Otsu's greyscale thresholding method was used (although the online adaptive threshold technique also holds some promise, since it requires no additional human input other than an "arbitrarily" determined alpha value)
 All of these steps can be done iteratively throughout the entire image sequence.
 
 ### Reducing False Negative Detection
