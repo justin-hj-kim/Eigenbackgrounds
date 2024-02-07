@@ -18,7 +18,7 @@ found in this repository.
 <p>
 
 ## Introduction
-Camera-traps are stationary, motion-triggered cameras that are secured to trees in the field in order to observe the animal population and biodiversity in the selected area. As the animals pass through the desired area, camera traps are motion triggered to capture short sequences of images. These camera traps are becoming increasingly popular, as they are a cost-effective, non-invasive way of capturing biodiversity data. These image sets typically range in the order of tens of thousands, an dthe task of manually processing these images is extremely time consuming. 
+Camera-traps are stationary, motion-triggered cameras that are secured to trees in the field in order to observe the animal population and biodiversity in the selected area. As the animals pass through the desired area, camera traps are motion triggered to capture short sequences of images. These camera traps are becoming increasingly popular, as they are a cost-effective, non-invasive way of capturing biodiversity data. These image sets typically range in the order of tens of thousands, and the task of manually processing these images is extremely time consuming. 
 
 ## General Method
 The Eigenbackground method uses the eigenvectors of the image data set to perform singular value decomposition and principal component analysis to construct a robust probability density function of the static portions of background. The Eigenbackground is not strictly pixel related, as it takes into account the corresponding pixel values in the form of eigenvectors, and is relatively computationally light. 
